@@ -71,9 +71,9 @@ const BlogForm = ({ blog, onClose }) => {
   return (
     <div className="modal">
       <div className="modal-content">
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>
+        <div className="modal-header">
           <h3>{blog ? "Edit Blog" : "Add New Blog"}</h3>
-          <button onClick={onClose} style={{ background: "none", border: "none", fontSize: "20px", cursor: "pointer" }}>
+          <button onClick={onClose} className="modal-close">
             ×
           </button>
         </div>
@@ -97,7 +97,7 @@ const BlogForm = ({ blog, onClose }) => {
             <textarea name="description" value={formData.description} onChange={handleChange} required rows="6" />
           </div>
 
-          <div style={{ display: "flex", gap: "10px", justifyContent: "flex-end" }}>
+          <div className="modal-actions">
             <button type="button" className="btn btn-secondary" onClick={onClose}>
               Cancel
             </button>
