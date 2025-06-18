@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-content">
           <Link to="/" className="navbar-brand">
-            Blog App
+            iBlog
           </Link>
           <div className="navbar-nav">
             {user ? (
