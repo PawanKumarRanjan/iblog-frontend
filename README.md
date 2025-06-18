@@ -2,7 +2,7 @@
 
 This is the frontend of a Blog Management Application built with Angular. It allows users to sign up, log in, create and manage blogs, and view their dashboard with profile details.
 
-# Features
+## Features
 
 - **User Authentication**
   - Signup with email, password, and profile image
